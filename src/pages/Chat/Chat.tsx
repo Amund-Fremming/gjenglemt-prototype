@@ -9,8 +9,8 @@ import Iphone from "../Inbox/images/Iphone.jpeg";
 export default function Chat() {
   return (
     <div className="flex flex-col w-full pb-32">
-      <div className="w-full h-16 bg-blue-400 mb-6 flex justify-start items-center pl-2 ">
-        <div className="flex text-4xl text-blue-900 pr-6">
+      <div className="w-full h-16 bg-[#E4E2E9] mb-6 flex justify-start items-center pl-2 ">
+        <div className="flex text-4xl text-[#806FA3] pr-6">
           <Link to="/inbox">
             <BsFillArrowLeftCircleFill />
           </Link>
@@ -19,7 +19,7 @@ export default function Chat() {
           src={Iphone}
           className="object-contain rounded-full w-12 h-12 mx-2"
         />
-        <h1 className="text-gray-200 font-serif text-xl">Mistet Iphone</h1>
+        <h1 className="text-[#806FA3] font-serif text-xl">Mistet Iphone</h1>
       </div>
       <ChatLeft
         text="Halla mann, jeg har mistet jomfrudommen min og ser at du kanskje har
