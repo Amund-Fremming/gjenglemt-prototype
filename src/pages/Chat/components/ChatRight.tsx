@@ -14,7 +14,7 @@ export default function ChatRight({ image, text }: RightProps) {
         </div>
       </div>
       <div className="flex justify-end">
-        <img className=" w-12 h-12 rounded-full" src={image} />
+        <img className="mr-2 w-12 h-12 rounded-full" src={image} />
       </div>
     </>
   );

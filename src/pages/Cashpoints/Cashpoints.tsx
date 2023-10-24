@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Rewards from "./components/Rewards";
+import Coupons from "./components/Coupons";
 
 export default function Cashpoints() {
   const [toggleRewards, setToggleRewards] = useState(true);
 
   return (
     <>
-      <div className="p-4 flex flex-col justify-center items-center">
+      <div className=" p-4 mt-12 flex flex-col justify-center items-center">
         <div className="w-[100%] flex justify-evenly items-center font-serif">
           <h1
             className={`w-[100%] text-center text-gray-600 ${
@@ -28,6 +29,7 @@ export default function Cashpoints() {
       </div>
 
       {toggleRewards && <Rewards />}
+      {!toggleRewards && <Coupons />}
     </>
   );
 }

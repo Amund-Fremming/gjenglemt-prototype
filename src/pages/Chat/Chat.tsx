@@ -8,7 +8,8 @@ import Iphone from "../Inbox/images/Iphone.jpeg";
 
 export default function Chat() {
   return (
-    <div className="flex flex-col w-full pb-32">
+    <div className=" flex flex-col w-full pb-32">
+      <div className="w-full h-16 bg-[#E4E2E9]" />
       <div className="w-full h-16 bg-[#E4E2E9] mb-6 flex justify-start items-center pl-2 ">
         <div className="flex text-4xl text-[#806FA3] pr-6">
           <Link to="/inbox">

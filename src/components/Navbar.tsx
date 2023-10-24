@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="z-10 rounded-full bg-[#E4E2E9] h-20 w-20 flex justify-center items-center text-4xl font-extrabold text-[#39236C]"></div>
       </div>
 
-      <div className="shadow-2xl fixed bottom-0 left-0 w-full bg-[#E4E2E9] h-20 flex justify-between items-center pr-4 pl-4 text-3xl text-[#806FA3]">
+      <div className="fixed bottom-0 left-0 w-full bg-[#E4E2E9] h-20 flex justify-between items-center pr-6 pl-6 text-3xl text-[#806FA3]">
         <Link to="/">
           <AiFillHome />
         </Link>
@@ -19,7 +19,9 @@ export default function Navbar() {
           <FaInbox />
         </Link>
         <div className="mb-14 text-4xl text-[#39236C]">
-          <FaPlus />
+          <Link to="/modal">
+            <FaPlus />
+          </Link>
         </div>
         <Link to="/cashpoints">
           <FaMoneyBillAlt />

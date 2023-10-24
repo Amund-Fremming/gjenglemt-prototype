@@ -11,7 +11,7 @@ export default function ChatLeft({ image, text }: LeftProps) {
           {text}
         </div>
       </div>
-      <img className="w-12 h-12 rounded-full" src={image} />
+      <img className="w-12 h-12 rounded-full ml-2" src={image} />
     </>
   );
 }
