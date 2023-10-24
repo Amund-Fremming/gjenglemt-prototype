@@ -1,7 +1,7 @@
 export default function Modal() {
   return (
     <>
-      <dialog className=""></dialog>
+      <dialog className=" "></dialog>
     </>
   );
 }
