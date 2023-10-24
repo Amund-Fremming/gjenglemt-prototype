@@ -3,8 +3,12 @@ import { FaPlus } from "react-icons/fa6";
 import { AiFillHome } from "react-icons/ai";
 import { FaInbox, FaMoneyBillAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Modal from "./Modal";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <>
       <div className="fixed bottom-[25px] w-full h-20 z-0 flex justify-center items-center">
@@ -18,10 +22,11 @@ export default function Navbar() {
         <Link to="/inbox">
           <FaInbox />
         </Link>
-        <div className="mb-14 text-4xl text-[#39236C]">
-          <Link to="/modal">
-            <FaPlus />
-          </Link>
+        <div
+          className="mb-14 text-4xl text-[#39236C]"
+          onClick={() => setModalOpen(!modalOpen)}
+        >
+          <FaPlus />
         </div>
         <Link to="/cashpoints">
           <FaMoneyBillAlt />
@@ -29,6 +34,8 @@ export default function Navbar() {
         <Link to="/profile">
           <BsFillPersonFill />
         </Link>
+
+        <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} />
       </div>
     </>
   );
