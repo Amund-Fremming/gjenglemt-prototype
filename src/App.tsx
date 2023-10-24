@@ -7,7 +7,6 @@ import Profile from "./pages/Profile/Profile";
 import Chat from "./pages/Chat/Chat";
 import CaseFound from "./pages/Case/CaseFound";
 import CaseLost from "./pages/Case/CaseLost";
-import Modal from "./components/Modal";
 
 export const App = () => {
   return (
@@ -18,10 +17,6 @@ export const App = () => {
           <Route path="/inbox" element={<Inbox />} />
           <Route path="/casefound" element={<CaseFound />} />
           <Route path="/caselost" element={<CaseLost />} />
-
-          {/* BARE FOR UTVIKLING */}
-          <Route path="/modal" element={<Modal />} />
-
           <Route path="/cashpoints" element={<Cashpoints />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/chat" element={<Chat />} />
